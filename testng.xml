@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium Automation Suite" parallel="tests" thread-count="3">
+    
+    <!-- <listeners>
+        <listener class-name="utilities.RetryAnalyzer"/>
+    </listeners> -->
+    
+    <test name="Chrome Tests" parallel="methods" thread-count="2">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.PurchaseFlowTest"/>
+            <class name="tests.DataDrivenLoginTest"/>
+        </classes>
+    </test>
+    
+    <test name="Firefox Tests" parallel="methods" thread-count="2">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.PurchaseFlowTest"/>
+        </classes>
+    </test>
+    
+    <test name="Edge Tests" parallel="methods" thread-count="2">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+</suite>

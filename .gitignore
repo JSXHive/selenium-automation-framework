@@ -1,0 +1,30 @@
+# Compiled files
+target/
+*.class
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# Logs
+logs/
+*.log
+
+# Reports
+reports/
+test-output/
+
+# Screenshots
+screenshots/
+
+# Test data (if containing sensitive info)
+testdata/*.xlsx
+!testdata/*.json
+
+# OS files
+.DS_Store
+Thumbs.db

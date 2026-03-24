@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Multi-Website Test Suite" parallel="tests" thread-count="4">
+    
+    <test name="SauceDemo Tests">
+        <parameter name="website" value="website1"/>
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.PurchaseFlowTest"/>
+        </classes>
+    </test>
+    
+    <test name="AutomationExercise Tests">
+        <parameter name="website" value="website2"/>
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.PurchaseFlowTest"/>
+        </classes>
+    </test>
+    
+    <test name="ShopDemoQA Tests">
+        <parameter name="website" value="website3"/>
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+    
+</suite>

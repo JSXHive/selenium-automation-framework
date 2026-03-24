@@ -1,0 +1,26 @@
+{
+  "validUsers": [
+    {
+      "username": "standard_user",
+      "password": "secret_sauce",
+      "shouldSucceed": true
+    },
+    {
+      "username": "problem_user",
+      "password": "secret_sauce",
+      "shouldSucceed": true
+    }
+  ],
+  "invalidUsers": [
+    {
+      "username": "invalid_user",
+      "password": "wrong_password",
+      "shouldSucceed": false
+    },
+    {
+      "username": "locked_out_user",
+      "password": "secret_sauce",
+      "shouldSucceed": false
+    }
+  ]
+}
